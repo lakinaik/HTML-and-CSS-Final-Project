@@ -281,7 +281,7 @@ header {
     left: -40px;
     font-size: 120px;
     font-weight: 600;
-    color: rgba(241, 241, 247, 0.4);
+    color: rgba(241, 241, 247, 0.685);
     z-index: 5;
 }
 
@@ -414,7 +414,7 @@ line-height: 70px;
 .projects{
     padding: 50px 5px;
     height: 100vh;
-    background-color: #f6f7fa59;
+    background-color: #f6f7fa96;
     z-index: 1;
 }
 .projects-container{
@@ -467,9 +467,40 @@ line-height: 70px;
     display: flex;
 }
 
-.new{
-    width: 400px;
-    height: 500px;
-    background-color: red;
+.color-box{
+    padding: 7% 50px;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(./assets/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll, fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.color-box h1{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 60px;
+    color: #ffffff;
+}
+.color-box h4{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.698);
+    letter-spacing: 1px;
+}
+.color-box .btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 40px 0 0 0;
+    letter-spacing: 1px;
+}
+.color-box .btn:hover::after{
+    background-color: #ffffff;
 }
 /* -------------------projetcs-------------------- */
