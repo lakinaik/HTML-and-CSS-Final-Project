@@ -467,5 +467,9 @@ line-height: 70px;
     display: flex;
 }
 
-
+.new{
+    width: 400px;
+    height: 500px;
+    background-color: red;
+}
 /* -------------------projetcs-------------------- */
