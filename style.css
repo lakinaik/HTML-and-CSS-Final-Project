@@ -4,8 +4,9 @@
 }
 
 body {
-    padding: 28px;
+    padding: 28px 28px 0 28px;
     font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* -------------home section------------ */
@@ -217,6 +218,7 @@ header {
     width: 900px;
     padding: 60px 50px;
     background-color: #F16B39;
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -285,7 +287,7 @@ header {
 
 .top-heading .top-title.absolute {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: -40px;
     font-size: 120px;
     font-weight: 600;
@@ -596,4 +598,227 @@ line-height: 70px;
     height: 1px;
     text-align: center;
 
+}
+/* ------------------testimonials--------------- */
+.testimonial{
+    padding: 10px;
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.testimonial .top-heading{
+    flex-direction: column;
+    
+}
+.text-div{
+    width: 40%;
+}
+.testimonial .top-heading{
+    margin-bottom: 0;
+}
+.testimonial-text{
+font-size: 15px;
+letter-spacing: 1px;
+font-weight: 500;
+line-height: 25px;
+color: #919197;
+}
+.our-services-btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+.cards{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 230px;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+
+.card-name{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #121213;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+.card-role{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    Color: #bdbdc9;
+    margin: 10px 0;
+}
+.card-para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #919197;
+}
+.top-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    color: white;
+    position: relative;
+    margin: -60px auto 20px;
+    font-size: 60px;
+    line-height: 90px;
+}
+.card.card-top{
+    margin-top: -50px;
+    margin-bottom: 120px;
+}
+.card.card-down{
+    margin-bottom: 30px;
+}
+/* ------------blog----------- */
+.blog-section{
+    margin-top: 130px;
+    margin-bottom: 100px;
+    padding: 10px 30px;
+}
+.blogpost-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.blog{
+    width: 400px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    
+}
+.blog a{
+    text-decoration: none;
+}
+.blog .blog-img{
+    width: 400px;
+    position: relative;
+}
+.blog-img .meta-data{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.meta-data .date{
+    font-size: 26px;
+    font-weight: 400;
+    background-image: linear-gradient(45deg, #ff6361, #e47312);;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+}
+.meta-data .month{
+    font-size: 17px;
+    font-weight: 600;
+    background-color: white;
+    color: #919197;
+    padding: 10px 20px;
+}
+.blog .blog-img img{
+    max-width: 100%;
+}
+.blog .blog-content{
+    padding: 40px 30px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+}
+.blog-content .blog-name{
+    margin-bottom: 14px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #ffffff;
+}
+.blog-content .blog-para{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.698);
+}
+.blog-content .read-more-btn{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.blog-content .read-more-btn a{
+    color: white;
+}
+.blog-content .read-more-btn::after{
+    background-color: #ffffff59;
+}
+.blog-content .read-more-btn:hover::after{
+    background-color: #ffffff;
+}
+
+/* ---------------company----------- */
+.company{
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 60px 40px;
+}
+.company img{
+    width: 100px;
+}
+/* ------------footer------------- */
+footer{
+    background-color: #0a1229;
+    position: relative;
+    margin: 0 50px; 
+}
+.footer-content{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 50px;
+}
+.footer-content-box{
+    width: 30%;
+}
+.footer-heading{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    position: relative;
+}
+.footer-heading::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 95px;
+    width: 120px;
+    height: 2px;
+    background-color: #ff6361;
+}
+.footer-content-box p{
+    margin-top: 14px;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact h3{
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+.footer-contact p{
+    color: rgba(255, 255, 255, 0.541);
 }
