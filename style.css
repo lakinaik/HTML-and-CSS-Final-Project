@@ -413,7 +413,6 @@ line-height: 70px;
 /* -------------------projetcs-------------------- */
 .projects{
     padding: 50px 5px;
-    height: 100vh;
     background-color: #f6f7fa96;
     z-index: 1;
 }
