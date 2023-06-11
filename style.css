@@ -222,7 +222,7 @@ header {
     justify-content: space-evenly;
     position: absolute;
     right: 27px;
-    bottom: -20px;
+    bottom: -44px;
 }
 
 .info-box .info-box-child {
@@ -243,7 +243,15 @@ header {
     color: rgba(255, 255, 255, 0.698);
     margin-top: 10px;
 }
-
+.find-map{
+    margin-top: 20px;
+    color: white !important;
+    font-weight: 600;
+    display: inline-block;
+}
+.find-map:hover::after{
+    background-color: #ffffff !important;
+}
 /* -----------info-box--------------- */
 
 /* -------------home section------------ */
@@ -503,3 +511,89 @@ line-height: 70px;
     background-color: #ffffff;
 }
 /* -------------------projetcs-------------------- */
+.team-profile-box{
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.profile-1, .profile-2, .profile-3, .profile-4{
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 4px #ece7e7;
+}
+.profile-1 .profile-img{
+    width: 260px;
+    height: 300px;
+    background-image: url(./assets/team-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profile-2 .profile-img{
+    width: 260px;
+    height: 300px;
+    background-image: url(./assets/team-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profile-3 .profile-img{
+    width: 260px;
+    height: 300px;
+    background-image: url(./assets/team-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profile-4 .profile-img{
+    width: 260px;
+    height: 300px;
+    background-image: url(./assets/team-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.profile-content{
+    padding: 20px;
+}
+.profile-content .profile-name{
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.profile-content .profile-role{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #bdbdc9;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.profile-social-links{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e27312;
+    border-bottom-right-radius: 8px;
+}
+.profile-social-links a{
+    padding: 18px 24px;
+    color: white;
+    font-size: 13px;
+    position: relative;
+}
+.profile-social-links a::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: -0px;
+    background-color: #ffffff4d;
+    width: 80%;
+    height: 1px;
+    text-align: center;
+
+}
