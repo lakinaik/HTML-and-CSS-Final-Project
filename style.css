@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -544,6 +544,7 @@ header {
 .team-profile-box {
     margin-top: 80px;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
@@ -555,7 +556,7 @@ header {
     position: relative;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 4px 4px #ece7e7;
+    box-shadow: 0 0 4px 4px #fcfbfb;
 }
 
 .profile-1 .profile-img {
@@ -932,8 +933,10 @@ footer .links {
     }
 
     .home {
-        height: 380px;
+        height: 450px;
         position: relative;
+        background-size: auto, cover;
+        background-position:50% 50%;
     }
 
     .social-icons {
@@ -952,19 +955,29 @@ footer .links {
         color: white;
         font-size: 15px;
         cursor: pointer;
-        padding: 10px;
+        padding: 19px;
     }
 
     .humburger {
-        width: 20px;
-        height: 20px;
-        background-color: red;
-        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .humburger span{
+        width: 38px;
+        height: 3px;
+        background-color: #414163;
     }
 
     .navbar {
         font-size: 1.1rem;
-        /* padding: 10px; */
+        padding-right: 10px;
+        height: 50px;
+        align-items: center;
     }
 
     .navbar .menu {
@@ -974,19 +987,17 @@ footer .links {
     .logo {
         width: 100px;
         height: 100%;
-        background: rgb(255, 136, 0);
+        background: rgb(233, 128, 9);
         margin-left: 0;
-        padding: 10px;
+        padding: 0px 20px;
     }
-    .logo img{
-        width: 80px;
-    }
-
+   
     .banner-text {
         font-size: 1rem;
         position: relative;
         margin-top: 0;
         padding: 60px 25px;
+        margin-top: 20px;
     }
 
     .banner-text h1 {
@@ -1064,7 +1075,7 @@ footer .links {
         padding-bottom: 0px;
     }
     .about-text .top-title{
-        margin: 14px 0;
+        margin: 28px 0;
     }
 
     .about-heading {
@@ -1111,32 +1122,36 @@ footer .links {
         width: 100%;
         padding: 0px;
     }
-    .project .top-heading{
+    .projects .top-heading{
+        margin-top: 20px;
         margin-left: 30px;
         justify-content: flex-start;
         flex-direction: column;
     }
     .projects-container{
         padding: 0;
-        gap: 0;
+        gap: 10px;
     }
-    .projects-container a{
+    .projects-container{
         margin: 0;
-        padding: 0;
+        padding: 30px;
     }
     .project-box img{
         width: 100%;
     }
-    .team-profile-box {
-        width: 90%;
-    }
+  
     .color-box{
         padding: 30px;
         align-items: start;
     }
     .color-box h1{
         font-size: 26px;
-        line-height: 25px;
+        line-height: 40px;
+    }
+    .color-box h4{
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 20px;
     }
     .testimonial {
         flex-direction: column;
@@ -1144,46 +1159,57 @@ footer .links {
         gap: 0;
         padding: 0;
         margin: 0;
+        padding-bottom: 20px;
     }
-    .text-div {
+    .text-div{
         width: 100%;
+    }
+    .our-services-btn{
+        margin-left: 30px;
     }
     .cards {
         flex-direction: column;
-        width: 300px;
+        width: 350px;
+        margin-top: 50px;
+        gap: 40px;
+        justify-content: center;
     }
-
-    .card {
-        margin: 20px 0 0 0;
+    .card{
+        width: fit-content;
+        margin: 0px;
     }
-
-    .card.card-top {
+    .card.card-down{
         margin: 0;
     }
-
-    .cards.card-down {
-        margin-bottom: 0px;
+    .card.card-top{
+        margin: 0;
     }
-
     .company {
         flex-direction: column;
-    }
-    .team-profile-box{
-        display: inline-block;
-        width: 100%;
     }
     .blog-section{
         margin-top: 15px;
         padding: 0;
     }
+    .blog-section .top-heading{
+        padding-left: 30px;
+        margin: 40px 0;
+    }
     .blog{
-        width: 300px;
+        width: 350px;
     }
     .blog .blog-img{
         max-width: 100%;
     }
+    .team-profile-box{
+        display: flex;
+        justify-content: center;
+    }
+    .profile{
+        width: 350px;
+    }
    .team-profile-box .profile-img{
-    max-width: 100%;
+    width: 350px;
    }
     footer {
         background-color: #0a1229;
@@ -1197,11 +1223,24 @@ footer .links {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 15px;
+        padding: 25px;
     }
 
     .footer-content-box {
         width: 100%;
         font-size: 13px;
+        margin-top: 30px;
+    }
+    .footer-content-box .links .find-map{
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .footer-logo{
+        position: relative;
+        left: 30px;
+        padding: 0 40px;
+        width: 100px;
+        height: 60px;
     }
 }
