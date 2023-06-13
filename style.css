@@ -28,7 +28,9 @@ header {
     background-color: #ffffff;
     position: relative;
 }
-
+.humburger{
+    display: none;
+}
 .logo {
     width: 150px;
     height: 110px;
@@ -401,6 +403,7 @@ header {
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 40px;
 
 }
@@ -780,12 +783,12 @@ footer{
     background-color: #0a1229;
     position: relative;
     margin: 0 50px; 
-    position: relative;
 }
 .footer-content{
     color: white;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 80px 50px;
 }
 .footer-content-box{
@@ -833,4 +836,151 @@ footer .links{
     position: absolute;
     bottom: 0;
     left: 50px;
+}
+
+
+
+/* ------------------Responsive code------------ */
+
+@media screen and (max-width: 420px) {
+    body{
+        padding: 0 0 0 0;
+        margin: 0;
+    }
+    .home{
+        padding: 20px 0px 20px 0;
+        height: 40vh;
+        position: relative;
+    }
+    header{
+        padding: 4px;
+    }
+    .humburger{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+    }
+    .navbar{
+        font-size: 1.1rem;
+        background: red;
+    }
+    .navbar .menu{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+        height: 100%;
+        background: red;
+    }
+    .banner-text{
+        font-size: 1rem;
+        padding: 30px 20px;
+        position: relative;
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+    .social-icons {
+        background: #0A1229;
+        color: white;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+    
+    .social-icons i {
+        border: 1px solid #2D3347;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .info-box{
+        display: none;
+    }
+    .top-heading{
+        font-size: .1rem;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .top-heading .top-title.absolute{
+        display: none;
+    }
+    .content-box .content-box-child{
+        width: 100%;
+        padding: 15px;
+    }
+    .about-main{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    
+.about-heading {
+    margin: 0;
+    padding: 10px;
+}
+.about-main{
+    justify-content: flex-start;
+}
+.about-top-heading{
+    margin: 0;
+    padding: 0;
+}
+   .about-main .img-section img{
+    width: 100%;
+    justify-content: flex-start;
+   }
+   .text-section .about-text{
+    width: 100%;
+   }
+   .about-text-desc{
+    font-size: 10px;
+   }
+   .number-box{
+    margin-top: 520px;
+   }
+   .number-box .number-box-child{
+    width: 100%;
+    display: block;
+   }
+   .projects{
+    width: 100%;
+   }
+   .team-profile-box{
+    flex-direction: column;
+   }
+   .testimonial{
+    flex-direction: column;
+   }
+   .cards{
+    flex-direction: column  ;
+   }
+   .card{
+    margin: 20px 0 0 0;
+   }
+   .card.card-top{
+    margin: 0;
+   }
+   .cards.card-down{
+    margin-bottom: 0px;
+   }
+   .company{
+    flex-direction: column;
+   }
+   footer{
+    background-color: #0a1229;
+    position: relative;
+}
+.footer-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-content-box{
+    width: 100%;
+}
 }
