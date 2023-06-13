@@ -438,7 +438,7 @@ header {
 /* -------------------projetcs-------------------- */
 .projects {
     padding: 50px 5px;
-    background-color: #f6f7fa96;
+    background-color: #ebedf350;
     z-index: 1;
 }
 
@@ -555,7 +555,7 @@ header {
     position: relative;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 4px 4px #fcfbfb;
+    /* box-shadow: 0 0 4px 4px #fcfbfb; */
 }
 
 .profile-1 .profile-img {
@@ -1016,7 +1016,9 @@ footer .links {
         padding: 30px;
         padding-bottom: 0;
     }
-
+        .services .heading-title-btn{
+            display: inline-block;
+        }
     .top-heading {
         display: inline-block;
         margin: 0;
@@ -1120,6 +1122,11 @@ footer .links {
     .projects {
         width: 100%;
         padding: 0px;
+    }
+    .project .heading-title-btn,
+    .team .heading-title-btn,
+    .blog-section .heading-title-btn{
+        display: inline-block;
     }
     .projects .top-heading{
         margin-top: 20px;
@@ -1234,6 +1241,7 @@ footer .links {
         margin-top: 5px;
         font-weight: 400;
         font-size: 14px;
+        display: inline-block;
     }
     .footer-logo{
         position: relative;
