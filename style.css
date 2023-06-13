@@ -964,7 +964,7 @@ footer .links {
 
     .navbar {
         font-size: 1.1rem;
-        background: red;
+        /* padding: 10px; */
     }
 
     .navbar .menu {
@@ -974,14 +974,19 @@ footer .links {
     .logo {
         width: 100px;
         height: 100%;
-        background: red;
+        background: rgb(255, 136, 0);
+        margin-left: 0;
+        padding: 10px;
+    }
+    .logo img{
+        width: 80px;
     }
 
     .banner-text {
         font-size: 1rem;
         position: relative;
         margin-top: 0;
-        padding: 20px 25px;
+        padding: 60px 25px;
     }
 
     .banner-text h1 {
